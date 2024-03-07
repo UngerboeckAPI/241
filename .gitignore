@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Examples/bin
+/Examples/obj
+/StartHere/obj
+/UngerboeckSDKWrapperJWT/bin
+/UngerboeckSDKWrapperJWT/obj
+StartHere/bin
+/UngerboeckSDKWrapperJWT/Ungerboeck.Api.Sdk.1.0.0.nuspec

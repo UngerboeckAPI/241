@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <Configurations>Debug;Release;Debug-Local;UngerboeckSDKPublish</Configurations>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Ungerboeck.Api.Sdk</AssemblyName>
+    <RootNamespace>Ungerboeck.Api.Sdk</RootNamespace>
+    <LangVersion>7.1</LangVersion>
+    <PackageId>UngerboeckCurrentSDKWrapper</PackageId>
+    <Authors>Ungerboeck</Authors>
+    <Product>UngerboeckCurrentSDKWrapper</Product>
+    <Description>This is the SDK wrapper that has premade code to connect to the Ungerboeck API endpoints.</Description>
+    <Copyright>Copyright 2021</Copyright>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageTags>Ungerboeck USI SDK API Model Models Endpoints</PackageTags>
+  </PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">		
+
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UngerboeckSDKPublish|AnyCPU'">
+		<OutputPath>..\..\..\Bin\</OutputPath>
+		<SignAssembly>true</SignAssembly>
+		<AssemblyOriginatorKeyFile>c:\certificate\UngerboeckApi.snk</AssemblyOriginatorKeyFile>
+		<DelaySign>false</DelaySign>
+	</PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Ungerboeck.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="7.4.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.4.0" />
+    <PackageReference Include="Ungerboeck.Api.Models" Version="1.241.1.5" />
+  </ItemGroup>	
+</Project>
