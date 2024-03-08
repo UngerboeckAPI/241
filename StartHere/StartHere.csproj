@@ -14,7 +14,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Ungerboeck.Api.Sdk" Version="1.241.1.5" />
+    <PackageReference Include="Ungerboeck.Api.Sdk" Version="1.241.1.7" />
   </ItemGroup>
 
   <ItemGroup>
